@@ -5,6 +5,7 @@
 * [2. 建立 channel](#2.-建立-channel)
 * [3. 建立開發環境](#3.-建立開發環境)
 * [4. 程式撰寫](#4.-程式撰寫)
+* [5. 補充資料](#5.-補充資料)
 
 ## 1. Line Bot 簡介
 與Line Notify不同的地方是：Line Bot可以回覆用事先設定好的問題。也可以結合其他第三方手提供的API，寫出更有趣的功能。
@@ -29,3 +30,6 @@ pip install flask beautifulsoup4 requests line-bot-sdk
 ## 4. 程式撰寫
 參考Line官方提供的Python SDK: https://github.com/line/line-bot-sdk-python
 > 程式參考 app.py
+
+## 5. 補充資料 
+[什麼是Webhook?](https://medium.com/@justinlee_78563/line-bot-%E7%B3%BB%E5%88%97%E6%96%87-%E4%BB%80%E9%BA%BC%E6%98%AF-webhook-d0ab0bb192be)
