@@ -6,6 +6,7 @@
 * [3. 建立開發環境](#3.-建立開發環境)
 * [4. 程式撰寫](#4.-程式撰寫)
 * [5. 圖文選單](#5.-圖文選單)
+* [6. 發送圖片訊息](#6.-發送圖片訊息)
 * [補充資料](#補充資料)
 
 ## 1. Line Bot 簡介
@@ -36,6 +37,20 @@ pip install flask beautifulsoup4 requests line-bot-sdk
 如果我們的機器人有幾個常用的功能，或是需要打比較長的指令時，可以試著使用圖文選單，使用者只需要點擊圖片，即可執行對應的指令。
 
 開啟圖文選單的功能有兩種方法，我們這邊選擇不需要寫程式的方法：前往[這個網址](https://admin-official.line.me/)，登入 Line 帳號後，在網頁左邊找到**圖文選單**，這邊即可進行圖文選單的設定。
+
+## 6. 發送圖片訊息
+發送圖片訊息使用的是：```ImageSendMessage```，使用前記得先:```from linebot.models import ImageSendMessage```。
+```ImageSendMessage```的語法是：
+```python
+ImageSendMessage(
+    original_content_url = image_url,
+    preview_image_url = image_url
+)
+```
+要特別注意的事：圖片的網址必須是HTTPS且檔案大小要在 1 MB內，詳細資訊請參考[官方文件](https://developers.line.biz/en/reference/messaging-api/#image-message)
+
+若有線上圖庫的需求，可以考慮使用**Imgur**，**Imgur**的網址有符合 Line 的規定，**Imgur** 也有提供 [官方API](https://apidocs.imgur.com/?version=latest)。
+
 
 ## 補充資料 
 [什麼是Webhook?](https://medium.com/@justinlee_78563/line-bot-%E7%B3%BB%E5%88%97%E6%96%87-%E4%BB%80%E9%BA%BC%E6%98%AF-webhook-d0ab0bb192be)
