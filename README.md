@@ -5,7 +5,8 @@
 * [2. 建立 channel](#2.-建立-channel)
 * [3. 建立開發環境](#3.-建立開發環境)
 * [4. 程式撰寫](#4.-程式撰寫)
-* [5. 補充資料](#5.-補充資料)
+* [5. 圖文選單](#5.-圖文選單)
+* [補充資料](#補充資料)
 
 ## 1. Line Bot 簡介
 與Line Notify不同的地方是：Line Bot可以回覆用事先設定好的問題。也可以結合其他第三方手提供的API，寫出更有趣的功能。
@@ -31,5 +32,10 @@ pip install flask beautifulsoup4 requests line-bot-sdk
 參考Line官方提供的Python SDK: https://github.com/line/line-bot-sdk-python
 > 程式參考 app.py
 
-## 5. 補充資料 
+## 5. 圖文選單
+如果我們的機器人有幾個常用的功能，或是需要打比較長的指令時，可以試著使用圖文選單，使用者只需要點擊圖片，即可執行對應的指令。
+
+開啟圖文選單的功能有兩種方法，我們這邊選擇不需要寫程式的方法：前往[這個網址](https://admin-official.line.me/)，登入 Line 帳號後，在網頁左邊找到**圖文選單**，這邊即可進行圖文選單的設定。
+
+## 補充資料 
 [什麼是Webhook?](https://medium.com/@justinlee_78563/line-bot-%E7%B3%BB%E5%88%97%E6%96%87-%E4%BB%80%E9%BA%BC%E6%98%AF-webhook-d0ab0bb192be)
